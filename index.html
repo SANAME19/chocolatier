@@ -9,14 +9,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <title>Document</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js" defer></script>
 
 
-    <script src="script.js">defer</script>
-    <link rel="stylesheet" href="style.css">
+
+    
     <link rel="stylesheet" type="text/css"
         href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css" />
     <link rel="stylesheet" type="text/css"
         href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/fill/style.css" />
+        <script src="script.js">defer</script>
+    <link rel="stylesheet" href="style.css">
+        
 
 
 </head>
@@ -42,21 +47,28 @@
     <nav class="listpuce">
         <li><a href=""><i class="ph ph-magnifying-glass"></i></a></li>
         <li><a href=""><i class="ph ph-user"></i></a></li>
-        <li><a href=""><i class="ph ph-list"></i> </a></li>
+        
 
     </nav>
 
       </header>
 
+      <hr>
 
-    <section class="bgimg space-between mt-30"> <!-- section hero banniere -->
 
-     
-     <h2> Palais du chocolat</h2>
+    <section class="bgimg mt-30 flex align-center justify-center space-around"> <!-- section hero banniere -->
 
-     <h3>Le chocolat qui eveille vos papille</h3>
+        <div class="entete">  
+
+       <a href=""> <img src="assets/logo-chocolat-2.png " alt="" class="logo"></a>
+        <h2> Palais du chocolat</h2>
+
+         <h3>Le chocolat qui eveille vos papille</h3>
         <a href="" class="btn">Devis gratuit</a>
 
+
+          </div>
+  
 
 
 
@@ -66,27 +78,46 @@
     </section>
 
 
-    <section class="mt-80 flex"> <!-- section1 NOS PRODUITS -->
+    <section> <!-- section1 NOS PRODUITS -->
+          <h3 class="flex mt-80 justify-center"> NOS PRODUITS </h3>
+          
 
-        <div>
 
-         <p>Praline Croustillant</p>
-         <p>Tuffe au champagne</p>
-         <p> Tablette de choclat noir 70%</p>
-         <p>Coffret de choclat assortis</p>
-         <p>Chocolat chaud</p>
-         <p>Mendiant</p>
+          <div>
+            <p>Chocolats</p>
+         <p>Confiseries</p>
+         <p>Tablettes</p>
+         <p>Coffrets</p>
+          </div>
+        <div class="flex align-center space-around gap-40 mt-80 " id="chocolats">
 
-        
+
+
+
+
+
+         
         </div>
 
 
 
-        <div class="carte flex">
-            <div class="W-33"> <!-- div1 -->
-                 <img src="https://js-dynamic-portfolio-data-makerslab-emlyon-cdweb-8f83155c64a0cc.gitlab.io/images/chocolatier/praline-croustillant.webp" alt="">
-                 <h4>Praliné croustillant </h4>
-                 <p>Une ganache fondante au praliné, agrémentée d'éclats de noisettes croustillants. Un véritable délice pour les amateurs de chocolat et de fruits secs. </p>
+
+        <div class="flex" id="chocolats">
+
+            <!-- 1 chocolat -->
+
+
+           
+                
+                 
+
+                 
+            
+            
+            
+
+            </div>   
+
 
         </div>
 
@@ -101,32 +132,34 @@
     </section>
 
 
-    <section> <!-- Presentation section2 -->
+    <section class="bgimg2"> 
+        <!-- Presentation section2 -->
 
-        <div><img src="assets/télécharger (5).jpg" alt=""></div>
+        
+
+        <div></div>
         <div>
-            <p>Notre chocolaterie est un lieu où la gourmandise rencontre le savoir-faire artisanal. Chaque création est élaborée avec soin à partir de chocolats de grande qualité, sélectionnés pour leurs arômes riches et authentiques. Pralinés fondants, ganaches délicates, tablettes raffinées et douceurs gourmandes sont confectionnés dans le respect de la tradition chocolatière.
 
-                Nous privilégions des ingrédients nobles, un travail précis et une attention particulière aux détails afin d’offrir une expérience gustative unique. En poussant la porte de notre chocolaterie, vous entrez dans un univers chaleureux où le parfum du cacao éveille les sens et invite au plaisir.
+            <h3>DECOUVREZ NOTRE GAMME DE NOËL</h3>
+             <a href="" class="btn">DECOUVRIR</a>
 
-            </p>
 
+            
             
         </div>
 
 
 
-    </section> <!-- fin section2 -->
+    </section class=mt-80> <!-- fin section2 -->
 
 
 
-    <section> <!-- section 3 -->
+    <section > <!-- section 3 -->
 
-        <h3> Pourquoi nous</h3>
+        <h3> POURQUOI NOUS CHOISIR</h3>
 
-        <div class="card">
-            <img src="assets/blackieshoot-vimMDduzk_k-unsplash.jpg " alt="" class="w-33">
-            <p> "Des chocolats artisanaux de qualité supérieure, réalisés à partir d'ingrédients sélectionnés avec soin",</p>
+        <div class="flex w-25 space-between card" id="listeBeneficesClients">
+           
         </div>
 
 
@@ -135,14 +168,40 @@
     </section> <!-- fin section 3 -->
 
 
-    <section> <!-- section 4 Temoignages -->
+    <section> <!-- section 4 Clients -->
 
-        <h3>TEMOINGAGES</h3>
 
         <div>
+        <h3>TEMOINGAGES</h3>
+        <div id="clients"></div>
+        <div class="card">
 
             <p>Sophie </p>
-            <p> </p>
+
+            <!--ETOILE-->
+            <nav>
+                <ul>
+                    <i class="ph-fill ph-star"></i>
+                </ul>
+
+                <ul>
+                    <i class="ph-fill ph-star"></i>
+                </ul>
+
+                <ul>
+                    <i class="ph-fill ph-star"></i>
+                </ul>
+
+                <ul>
+                    <i class="ph-fill ph-star"></i>
+                </ul>
+
+                <ul>
+                    <i class="ph-fill ph-star"></i>
+                </ul>
+
+            </nav>
+            
              <pCoffret cadeau personnalisé></p>
              <p>Le coffret de chocolats que j'ai offert était magnifique et délicieux. Les saveurs étaient variées et originales, et la présentation était très soignée. Un grand merci au Palais du Chocolat pour ce cadeau parfait. </p>
              
@@ -156,8 +215,12 @@
 <footer>
 
 
+<a href=""> <img src="assets/logo-chocolat-2.png " alt="" class="logo"></a>
+
+
 
 </footer>
+
 
 
 
