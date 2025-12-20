@@ -42,7 +42,7 @@ function afficheProduits(tableauProduits){
     avisClients.forEach(clients => {
         // pour chaque client j'affiche l'avis
 
-        document.getElementById("clients").innerHTML +=`<div class="card">
+        document.getElementById("clients").innerHTML +=`<div class="card flex mt-80 align-center ">
 
             <p>${clients.nom}</p>
             
@@ -65,9 +65,7 @@ function afficheProduits(tableauProduits){
                     <i class="ph-fill ph-star"></i>
                 </ul>
 
-                <ul>
-                    <i class="ph-fill ph-star"></i>
-                </ul>
+               
 
             <p>${clients.typePrestation}</p>
              <p> ${clients.commentaire }</p>
@@ -86,7 +84,7 @@ function listeBeneficesClients(listeBenefices) {
         // pour chaque client j'affiche les benefices
 
         document.getElementById("listeBeneficesClients").innerHTML +=`
-
+        <div class="mt-80 flex">
             
         <div class="card">
 
@@ -116,11 +114,7 @@ function listeBeneficesClients(listeBenefices) {
 
 
 
-        <div class="card">
-
-         <img src=" " alt="" class="w-33">
-            <p>${listeBenefices[2]} </p>
-        </div>
+        
         
         `
         
