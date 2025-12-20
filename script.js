@@ -65,7 +65,9 @@ function afficheProduits(tableauProduits){
                     <i class="ph-fill ph-star"></i>
                 </ul>
 
-               
+                <ul>
+                    <i class="ph-fill ph-star"></i>
+                </ul>
 
             <p>${clients.typePrestation}</p>
              <p> ${clients.commentaire }</p>
@@ -86,7 +88,7 @@ function listeBeneficesClients(listeBenefices) {
         document.getElementById("listeBeneficesClients").innerHTML +=`
         <div class="mt-80 flex">
             
-        <div class="card">
+        <div class="card ">
 
 
             <img src=" " alt="" class="w-33">
